@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Abhyuday | IIT Bombay</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/094f50aa26.js" crossorigin="anonymous"></script>
+
+    <!-- script -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+
+    <!-- favicons -->
+    <link rel="shortcut icon" href="images/black1.png" type="image/x-icon">
+    <link rel="icon" href="images/black1.png" type="image/x-icon">
+    <style type="text/css">
+        .secpad{
+            padding-bottom: 30px;
+            font-size: 20px;
+        }
+        .imgsec{
+            border-radius: 10px;
+            margin-top: 0px !important;
+        }
+        .regkarle{
+            padding: 7px;
+            /* background: #dafbff;
+            border-radius: 20px; */
+            background: #888;
+            border: 2px solid #888888;
+            color: white;
+            width: 17rem;
+            margin: auto;
+            margin-top: 20px;
+            float: right;
+            font-size: 14px;
+        }
+        .regkarle:hover{
+            transition: 0.75s;
+            border: 2px solid #888888;     
+            color: #888;
+            background: white;
+        }
+        .s-home::before {
+            background-color: #000000;
+        }
+        .question{
+            font-size: 2rem;
+            color:black;
+        }
+        .dhakdhak{
+            animation-name: wahi;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes wahi{
+            0%{color:#FE0000;}
+            50%{color:#FFEF00;}
+            100%{color:#0066CC;}
+        }
+
+        #myDIV {
+            text-align: justify;
+            text-align-last:end;
+        }
+        div.a {
+            text-align: justify; /* For Edge */
+            -moz-text-align-last: right; /* For Firefox prior 58.0 */
+            text-align-last: right;
+        }
+
+        /* TESTIMONIALS */
+        
+        .more-section
+        {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            background: #303030;
+        }
+
+        .more-container{
+            position: relative;
+            width: 1100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+
+        .more-container .more-card{
+            position: relative;
+            max-width: 320px;
+            height: 215px;
+            background: #fff;
+            color: #888;
+            margin: 30px 10px;
+            padding: 20px 10px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+            transition: 0.3s ease-in-out;
+        }
+
+        .more-container .more-card:hover{
+            height: 550px;
+        }
+
+        .more-container .more-card .more-imgBx{
+            position: relative;
+            width: 260px;
+            height: 260px;
+            top: -60px;
+            left: 19px;
+            z-index: 1;
+        }
+
+        .more-container .more-card .more-imgBx img{
+            max-width: 100%;
+            border-radius: 4px;
+        }
+
+        .more-container .more-card .more-content{
+            position: relative;
+            margin-top: 140px;
+            padding: 10px 15px;
+            text-align: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+
+        .more-container .more-card:hover .more-content{
+            visibility: visible;
+            opacity: 1;
+            margin-top: -40px;
+            transition-delay: 0.3s;
+        }
+
+
+    </style>
+
+</head>
+
+<body id="top">
+
+    <!-- header
+      ================================================== -->
+    <header class="s-header">
+  
+      <div class="header-logo">
+        <a class="site-logo" href="http://abhyudayiitb.org/" target="_blank">
+          <img src="images/Abhyuday.png" alt="Homepage" style="height: auto;margin-left: 32px;">
+        </a>
+      </div> <!-- end header-logo -->
+  
+      <nav class="header-nav">
+  
+        <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+  
+        <div class="header-nav__content">
+          <h3>Abhyuday</h3>
+  
+          <ul class="header-nav__list">
+            <li class="current"><a class="smoothscroll" href="#home" title="home">Home</a></li>
+            <li><a class="smoothscroll" href="#prof" title="about">About</a></li>
+            <li><a class="smoothscroll" href="#register" title="register">Register</a></li>
+            <li><a class="smoothscroll" href="#testimonials" title="testimonials">Testimonials</a></li>
+            <li><a class="smoothscroll" href="#works" title="faqs">FAQS</a></li>
+            <li><a class="smoothscroll" href="#contact" title="contact">Contact</a></li>
+          </ul>
+  
+  
+          <ul class="header-nav__social">
+            <li>
+              <a href="https://www.facebook.com/abhyuday.iitb/" target="_blank"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/Abhyuday_IITB?s=07" target="_blank"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/iitbombay_abhyuday/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/abhyuday-iit-bombay/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </li>
+  
+          </ul>
+  
+        </div> <!-- end header-nav__content -->
+  
+      </nav> <!-- end header-nav -->
+  
+      <a class="header-menu-toggle" href="#0">
+        <span class="header-menu-icon"></span>
+      </a>
+  
+    </header> <!-- end s-header -->
+    <!-- home
+      ================================================== -->
+    <!-- <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/bg.png" data-natural-width=3000 data-natural-height=2000 data-position-y=top> -->
+    <section id="home" class="s-home target-section main-home">
+  
+      <div class="shadow-overlay"></div>
+  
+      <div class="home-content">
+  
+        <div class="row home-content__main">
+          <h1>PROFECTUS
+          </h1>
+          <p>
+            The Fellowship Program of Abhyuday, IIT Bombay
+          </p>
+        </div> <!-- end home-content__main -->
+  
+      </div> <!-- end home-content -->
+  
+      <a href="#prof" class="home-scroll smoothscroll">
+        <span class="home-scroll__text" style="display: none;">Scroll Down</span>
+        <span class="home-scroll__icon"></span>
+      </a> <!-- end home-scroll -->
+  
+    </section> <!-- end s-home -->
+  
+    <!-- about
+    ================================================== -->
+  
+  
+    <section id="prof" style="background-color: white;">
+  
+      <div class="row section-header" data-aos="fade-up">
+        <div class="col-full">
+  
+          <h1 class="display-1" style="margin-top: 5vw;padding-top: 30px;text-align: right;">PROFECTUS</h1>
+        </div>
+      </div> <!-- end section-header -->
+  
+      <div class="row" data-aos="fade-up">
+        <div class="col-full">
+          <p class="lead" style="text-align: right; margin-bottom: -26px">
+            “The most practical, beautiful, workable philosophy in the world won’t work- if you won’t”<br> - Zig Ziglar<br>
+            Abhyuday IIT Bombay provides the young generation an opportunity to get involved in social work through PROFECTUS, Abhyuday's very own fellowship program.
+            Register for summer internship opportunities to work in the social sector and explore your interests at the same time.</p><br>
+          <p class="dhakdhak lead" style="display: none;">NEW!!</p>
+          <a href="https://docs.google.com/document/d/1IuC9dRzBHd0JlcOBHniZUKexBuwvzD-SDf2ns9iVaEE/edit?usp=sharing" style="display: none;"><u>Click here for list of selected candidates</u></a>
+          </p>
+        </div>
+      </div> <!-- end about-desc -->
+  
+      <div class="row services-list block-1-3 block-m-1-2 block-tab-full" data-aos="fade-up">
+        <div class="col-full tab-full" style="font-size: 20px;margin-bottom: 1px;">
+          <div class="row">
+  
+            <div class="col-six tab-full secpad">
+              <h3 class="h2">About Fellowship Program</h3>
+              <p>
+                The fellowship program of Abhyuday gives youth the opportunity to engage themselves in social work by working with NGOs, social startups and alumni of IIT Bombay working in this field. Fellowship focuses on providing an insight into
+                various sectors in the field of social work whilst providing a valuable output for society. The work students do in their fellowship ranges hugely, including communication, impact analysis, fundraising, planning and organizing support
+                groups, help with grant writing and other profiles which are important in socially impactful organisations. Fellows work under the direct supervision of professional social workers or social leaders who have extensive experience in the
+                field.
+                <br>P.S. Job Profiles like graphic design, digital marketing and web development also open.
+              </p>
+            </div>
+            <div class="col-six tab-full">
+              <p><a href="#"><img class="pull-right imgsec" alt="sample-image" src="images/poster.png"></a>
+            </div>
+          </div> <!-- end row -->
+  
+        </div>
+      </div> <!-- end services-list -->
+        <style>
+           body {
+      overflow-x: hidden;
+    }
+
+    a {
+      color: #0a81ab;
+    }
+
+    .secpad {
+      padding-bottom: 30px;
+      font-size: 20px;
+    }
+
+    .imgsec {
+      border-radius: 10px;
+      margin-top: 0px !important;
+    }
+
+    .regkarle {
+      padding: 7px;
+      /* background: #dafbff;
+            border-radius: 20px; */
+      background: #cf0000;
+      border: 2px solid #888888;
+      color: white;
+      width: 17rem;
+      margin: auto;
+      margin-top: 20px;
+      float: right;
+      font-size: 14px;
+    }
+
+    .regkarle:hover {
+      transition: 0.75s;
+      border: 2px solid #888888;
+      color: #cf0000;
+      background: white;
+    }
+
+    .s-home::before {
+      background-color: #000000;
+    }
+
+    .question {
+      font-size: 2rem;
+      color: black;
+    }
+
+    .dhakdhak {
+      animation-name: wahi;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+
+    @keyframes wahi {
+      0% {
+        color: #FE0000;
+      }
+
+      50% {
+        color: #FFEF00;
+      }
+
+      100% {
+        color: #0066CC;
+      }
+    }
+
+    #myDIV {
+      text-align: justify;
+      text-align-last: end;
+    }
+
+    div.a {
+      text-align: justify;
+      /* For Edge */
+      -moz-text-align-last: right;
+      /* For Firefox prior 58.0 */
+      text-align-last: right;
+    }
+
+    /* TESTIMONIALS */
+
+    .more-section {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      background: #111111;
+      padding: 2rem 0 3rem;
+    }
+
+    .more-container {
+      position: relative;
+      width: 1100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 30px;
+    }
+
+    .more-container .more-card {
+      position: relative;
+      max-width: 320px;
+      height: 215px;
+      background: #fff;
+      color: #888;
+      margin: 30px 10px;
+      padding: 20px 10px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+      transition: 0.3s ease-in-out;
+    }
+
+    .more-container .more-card:hover {
+      height: 550px;
+    }
+
+    .more-container .more-card .more-imgBx {
+      position: relative;
+      width: 260px;
+      height: 260px;
+      top: -60px;
+      left: 19px;
+      z-index: 1;
+    }
+
+    .more-container .more-card .more-imgBx img {
+      max-width: 100%;
+      border-radius: 7px;
+    }
+
+    .more-container .more-card .more-content {
+      position: relative;
+      margin-top: 140px;
+      padding: 10px 15px;
+      text-align: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.3s ease-in-out;
+    }
+
+    .more-container .more-card:hover .more-content {
+      visibility: visible;
+      opacity: 1;
+      margin-top: -40px;
+      transition-delay: 0.3s;
+    }
+
+    @media(max-width: 600px) {
+      .more-container .more-card:hover .more-content {
+        margin-top: -93px;
+      }
+
+    }
+
+    /* register popup */
+
+    .popup-container {
+      width: 80%;
+      height: 40vh;
+      background-color: #fff;
+      border-radius: 10px;
+      margin: auto;
+      position: fixed !important;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 100;
+      box-shadow: 10px 10px 91px 15px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 10px 10px 91px 15px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 91px 15px rgba(0, 0, 0, 0.75);
+      padding: 40px;
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popup-container .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 30px;
+      background-color: #eee;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .popup-container p {
+      font-size: 25px;
+    }
+
+    @media(max-width: 767px) {
+      .popup-container {
+        width: 95%;
+        height: fit-content;
+
+      }
+
+      .popup-container p {
+        font-size: 18px;
+      }
+    }
+
+    .s-works {
+      padding: 1rem 0 3rem;
+    }
+
+    .main-home {
+      background-image: url(images/bg.png);
+      background-position: bottom;
+      background-size: contain;
+      background-repeat: repeat-y;
+    }
+        </style>
+
+        <div class="popup-container">
+            <div id="close__" class="close">x</div>
+            <p>Hello there, looks like you were a little too late :( <br>
+                Registrations for Profectus 2021-22 have now been closed.
+                We hope to see you with us next time around. Here’s something fun to read:
+                <a href="https://cutt.ly/0nfgZlb">https://cutt.ly/0nfgZlb</a><br>
+                Feel free to get in touch with us for any query, details at bottom of home page.
+                 </p>
+        </div>
+        
+        
+        <div class="col-full tab-half text-center" data-aos="fade-up">
+            <h4 class="regkarle" style="margin-bottom: 50px;float: unset;width: 80%;font-size: 25px; cursor: pointer" id="popup">REGISTER NOW</h4>
+        </div>
+        
+        
+        <script>
+            document.querySelector('#popup').addEventListener('click', e => {
+                document.querySelector('.popup-container').style.display = 'flex'
+            })
+            document.querySelector('#close__').addEventListener('click', e => {
+                document.querySelector('.popup-container').style.display = 'none'
+            });
+        </script>
+            
+
+        <!--TESTIMONIALS-->
+
+        <div class="testimonials-heading" id="testimonials" st>
+            <div class="col-full testimonials-header" style="background: #111111; margin-top:3.2rem; padding-top: 1rem">
+              <h2 class="h1" style="color: #fff;font-family: 'Mrs Saint Delafield', cursive; font-size: 7.5rem; margin: -1px; padding: 0; margin-top: 4.5rem">.. Testimonials ..</h2>
+            </div>
+          </div>
+  
+          <div class="more-section">
+  
+            <div class="more-container">
+              <div class="more-card">
+                <div class="more-imgBx">
+                  <img src="images/avatars/bitthal.png" alt="image">
+                </div>
+                <div class="more-content">
+                  <h3 style="margin-bottom: 0.25rem;color: #0a81ab;">Bitthal Parida</h3>
+                  <p><b style="color: black;">2nd Year - Mechanical</b><br>I worked with A Hundred Hands in their Denim Project for content creation for catalog and brochure. I also worked on an e-commerce website. I felt a great sense of satisfaction as I
+                    contributed my bit towards a noble cause.</p>
+                </div>
+              </div>
+              <div class="more-card">
+                <div class="more-imgBx">
+                  <img src="images/avatars/Shriya.png" alt="image">
+                </div>
+                <div class="more-content">
+                  <h3 style="margin-bottom: 0.25rem;color: #0a81ab;">Shriya Tamboli</h3>
+                  <p><b style="color: black;">2nd Year - MEMS</b><br>I was involved in a team that helped spread awareness of HIV/AIDS amongst the sex workers in India. In the short amount of time that I spent there, I was able to learn how to actively
+                    make people aware of something like this.</p>
+                </div>
+              </div>
+              <div class="more-card">
+                <div class="more-imgBx">
+                  <img src="images/avatars/Pari.png" alt="image">
+                </div>
+                <div class="more-content">
+                  <h3 style="margin-bottom: 0.25rem;color: #0a81ab;">Pari Vermani</h3>
+                  <p><b style="color: black;">2nd Year - Mechanical</b><br>I interned as a content writer for Pranyas Development Foundation through Profectus. Over the course of the month of my internship, I worked on the initiatives the NGO was
+                    pioneering -- an extremely fulfilling experience for me.</p>
+                </div>
+              </div>
+              <div class="more-card">
+                <div class="more-imgBx">
+                  <img src="images/avatars/parishi.png" alt="image">
+                </div>
+                <div class="more-content">
+                  <h3 style="margin-bottom: 0.25rem;color: #0a81ab;">Parishi Gupta</h3>
+                  <p><b style="color: black;">2nd Year - Chemistry</b><br>I worked as a report writing intern with UNICEF, analysing the statistics and converting it into report for children.
+                    It was a great experience as it provided me with different perspectives analysing stats along with coordinating with the team.
+                  </p>
+                </div>
+              </div>
+  
+              <div class="more-card">
+                <div class="more-imgBx">
+                  <img src="images/avatars/labdhi.png" alt="image">
+                </div>
+                <div class="more-content">
+                  <h3 style="margin-bottom: 0.25rem;color: #0a81ab;">Labdhi Gandhi</h3>
+                  <p><b style="color: black;">2nd Year - MEMS</b><br>I worked as an app developement intern with Ankur Pratishthan. I honed my programming skills working directly under a professional. I also improved my interpersonal skills as I interacted
+                    with many people. I thoroughly enjoyed it.</p>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+  
+        <!-- FAQS -->
+        <section id='works' class="s-works">
+            <div class="testimonials-wrap" data-aos="fade-up">
+
+                <div class="row">
+                    <div class="col-full testimonials-header">
+                        <h2 class="h1">Frequently Asked Questions</h2>
+                    </div>
+                </div>
+
+                <div class="row testimonials">
+
+                    <div class="col-full testimonials__slider">
+                        <div class="testimonials__slide">
+                            <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                            <p><div class="question">What is the duration of the internship?</div><br>
+                            The duration of the internship is for 1 month from 1st July to 31st July.</p>
+                           
+                        </div>
+                        <div class="testimonials__slide">
+                            <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                            <p><div class="question">What are the steps for register for the fellowship program?</div><br> 
+                            There are 2 ways to register:<br>
+                            1. <a href="http://placements.iitb.ac.in/internship/login.jsp"> http://placements.iitb.ac.in/internship/login.jsp</a>.<br>
+                            2. Register directly through the Profectus portal <a href="http://abhyudayiitb.org/Profectus"> http://abhyudayiitb.org/Profectus</a>.</p>
+                            
+                        </div> 
+    
+                        <div class="testimonials__slide">
+                            <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                            <p><div class="question">Are the internships completely work from home?</div><br>
+                            Yes, the internships are completely work from home.</p>
+                           
+                        </div>
+
+                        <div class="testimonials__slide">
+                            <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                            <p><div class="question">Is there any limit on the number of internships that one can apply for?</div><br>
+                            No, one can apply for as many internships as he wishes depending on his interest but fill the preference form which we will send over mail.</p>
+                           
+                        </div>
+
+
+                        <div class="testimonials__slide">
+                            <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                            <p><div class="question">Is there any penalty for not completing the internship and leaving it midway?</div><br>
+                                Yes, leaving an internship midway will get reflected on your resume.</p>
+                           
+                        </div>
+
+                        <div class="testimonials__slide">
+                            <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                            <p><div class="question">What are the perks offered other than stipend?</div><br>
+                            Different internships may have different perks like certificate of completion, letter of recommendation, merchandise, flexible working hours etc.</p>
+                           
+                        </div>
+                        
+                        <div class="testimonials__slide">
+                            <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                            <p><div class="question">If an intern leaves the internship in between, would he/she receive any stipend or certificate?</div><br>
+                            No, in that case a stipend or certificate won’t be provided. </p>
+                           
+                        </div>
+                    </div> 
+                </div> 
+                <br><br><br>
+            </div> 
+        </section>
+    </section> <!-- end s-services -->
+    
+    
+    <!-- contact
+    ================================================== -->
+     <section id="contact" class="s-contact">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full text-center">
+                <h3 class="subhead subhead--light">Contact Us</h3>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row">
+
+            <div class="col-six contact-main text-center" data-aos="fade-up" style="
+    margin-top: auto;
+    margin-bottom: 0px;">
+                <p style="margin-bottom: 0px;
+    font-size: 3rem;
+    color: white;">Gautam Tanwar</p>
+                <p>Events and Fellowship Manager<br>
+                <a href="mailto:gautamt.abhyuday@gmail.com">gautamt.abhyuday@gmail.com</a><br>
+                <span style="color: white;" >9999171464</span>
+                </p>
+            </div> <!-- end contact-main -->
+            <div class="col-six contact-main text-center" data-aos="fade-up" style="
+    margin-top: auto;
+    margin-bottom: 0px;">
+                <p style="margin-bottom: 0px;
+    font-size: 3rem;
+    color: white;">Kinjal Kolhe</p>
+                <p>Events and Fellowship Manager<br>
+                <a href="mailto:kinjal.abhyuday@gmail.com">kinjal.abhyuday@gmail.com</a><br>
+                <span style="color: white;" >9511812545</span>
+                </p>
+            </div> <!-- end contact-main -->
+
+        </div> <!-- end row -->
+
+        <div class="row text-center">
+
+            <div class="col-six tab-full contact-secondary" data-aos="fade-up">
+                <h3 class="subhead subhead--light">Where To Find Us</h3>
+
+                <p class="contact-address" style="font-size: 2rem;">
+                
+                    Abhyuday Office
+                    Student Activity Centre ( SAC )
+                    IIT Bombay
+                    Zip Code - 400076
+                </p>
+            </div> <!-- end contact-secondary -->
+
+            <div class="col-six tab-full contact-secondary" data-aos="fade-up">
+                <h3 class="subhead subhead--light">Follow Us</h3>
+
+                <ul class="contact-social">
+                    <li>
+                        <a href="https://www.facebook.com/abhyuday.iitb/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/Abhyuday_IITB?s=07" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/iitbombay_abhyuday/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/abhyuday-iit-bombay/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    
+                </ul>  <!-- end contact-social -->
+
+                <!-- <div class="contact-subscribe">
+                    <form id="mc-form" class="group mc-form" novalidate="true">
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
+                        <input type="submit" name="subscribe" value="Subscribe">
+                        <label for="mc-email" class="subscribe-message"></label>
+                    </form>
+                </div> --> <!-- end contact-subscribe -->
+            </div> <!-- end contact-secondary -->
+
+        </div> <!-- end row -->
+
+        
+
+        <div class="cl-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+        </div>
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="flex"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">            
+        </div>
+    </div>
+
+  
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/owl.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
+</body>
+
+
+</html>
