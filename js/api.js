@@ -2,7 +2,7 @@ const form = document.querySelector("#form")
 
 
 const getdata = async (name) => {
-    const res = await fetch("https://api-cert.abhyudayiitb.org" + name)
+    const res = await fetch("https://api-cert.abhyudayiitb.org/api/" + name)
     const data = await res.json()
 
     return data
