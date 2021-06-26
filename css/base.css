@@ -425,7 +425,7 @@
   *
   * ------------------------------------------------------------------- */
  .row {
-   width: 89%;
+   /* width: 89%; */
    max-width: 1200px;
    margin: 0 auto;
  }
@@ -674,7 +674,7 @@
   * ------------------------------------------------------------------- */
  /* stack columns on small mobile devices
   * ------------------------------------------------------------------- */
- @media only screen and (max-width: 560px) {
+ @media only screen and (max-width: 840px) {
    .row .row {
      margin-left: 0;
      margin-right: 0;
