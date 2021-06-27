@@ -807,8 +807,10 @@ input[type="button"]:focus {
   background-color: #000000;
   border-color: #b8b8b8;
   color: white;
-  transition: 1.25s;
   outline: 0;
+  transition: 1.25s;
+}
+
 
 /* button primary
  * ------------------------------------------------- */
