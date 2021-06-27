@@ -12,7 +12,8 @@ form.addEventListener("submit", (e) => {
     e.preventDefault()
 
     let name = form.name.value.toLowerCase()
-    name = name.replace(" ", "").replace(".", "")
+    name = name.replaceAll(" ", "").replaceAll(".", "")
+    console.log(name);
     getdata(name).then(res => {
         console.log(res.url);
         localStorage.setItem("urls", JSON.stringify(res.url))
