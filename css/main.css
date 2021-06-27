@@ -513,7 +513,7 @@ form,
 }
 
 .pace .pace-progress {
-  background: #CD113B;
+  background: #ff4d4d;
   position: fixed;
   z-index: 900;
   top: 0;
@@ -804,10 +804,11 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  background-color: #b8b8b8;
+  background-color: #000000;
   border-color: #b8b8b8;
-  color: #000000;
+  color: white;
   outline: 0;
+  transition: 1.25s;
 }
 
 /* button primary
@@ -1274,7 +1275,7 @@ input::-moz-focus-inner {
   line-height: 1.3125;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
-  color: #CD113B;
+  color: #ff4d4d;
   margin-top: 0;
   margin-bottom: 2.1rem;
 }
